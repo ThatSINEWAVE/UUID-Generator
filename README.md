@@ -1,6 +1,6 @@
 <div align="center">
 
-# UUID Generator
+# [UUID Generator](https://thatsinewave.github.io/UUID-Generator/)
 
 The **UUID Generator** is a simple web application that allows users to generate UUIDs of different versions and download them as a text file. The app features an intuitive UI and is styled for a dark theme.
 
