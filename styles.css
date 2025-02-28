@@ -1,0 +1,136 @@
+/* General Styles */
+body,
+html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #121212;
+	color: #e0e0e0;
+	font-family: 'Arial', sans-serif;
+}
+
+/* Container Styling */
+.container {
+	width: 100%;
+	max-width: 500px;
+	background: #1e1e1e;
+	padding: 25px;
+	border-radius: 10px;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+	text-align: center;
+	transition: transform 0.2s ease-in-out;
+}
+
+h1 {
+	color: #ffcc00;
+	font-size: 24px;
+	margin-bottom: 15px;
+}
+
+/* Controls Styling */
+.controls {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+label {
+	font-weight: bold;
+	font-size: 14px;
+	color: #b0b0b0;
+}
+
+input,
+select {
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #333;
+	background: #2c2c2c;
+	color: #e0e0e0;
+	font-size: 16px;
+	outline: none;
+	transition: 0.2s;
+}
+
+input:focus,
+select:focus {
+	border-color: #ffcc00;
+}
+
+/* Buttons */
+button {
+	width: 100%;
+	padding: 12px;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background 0.3s, transform 0.2s ease-in-out;
+}
+
+#generate-btn {
+	background: linear-gradient(45deg, #ffcc00, #ff9900);
+	color: #121212;
+}
+
+#generate-btn:hover {
+	background: linear-gradient(45deg, #ff9900, #ff6600);
+	transform: scale(1.05);
+}
+
+#download-btn {
+	background: linear-gradient(45deg, #0066ff, #0099ff);
+	color: white;
+}
+
+#download-btn:hover {
+	background: linear-gradient(45deg, #0099ff, #00ccff);
+	transform: scale(1.05);
+}
+
+/* UUID Display */
+#uuid-list {
+	text-align: left;
+	background: #292929;
+	padding: 15px;
+	border-radius: 8px;
+	max-height: 300px;
+	overflow-y: auto;
+	border: 1px solid #444;
+}
+
+#uuid-list div {
+	padding: 8px;
+	border-bottom: 1px solid #444;
+	font-size: 14px;
+	color: #ffcc00;
+}
+
+#uuid-list div:last-child {
+	border-bottom: none;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #ffcc00;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #ff9900;
+}
